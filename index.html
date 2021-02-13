@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <title>CandyRun</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CandyRun" />
+    <meta name="keywords" content="משחק זיהוי, עמי ותמי" />
+    <meta name="author" content="names" />
+
+    <!-- CSS קישור לעמוד -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!-- יצירת פאביקון שיופיע רק אחרי העלאה לשרת -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html" id="noline">
+                <img id="logo" src="images/favicon.png" /> <!--הלוגו של המשחק שלכם-->
+                <p>CandyRun</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <div class="candytitle">
+                <a class="closeAbout">X</a>
+                <p>אודות</p>
+            </div>
+            <img id="game_logo" src="images/game_logo.png" width="120" height="50" /><br />
+            <i>
+                אפיון ופיתוח: אופיר לבקוביץ, שחר רוזן ועופרי נוימן
+            </i>
+            <p>
+                אופיין ופותח במסגרת פרויקט בקורסים:
+                סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1
+            </p>
+            <p>
+                תשפ"א
+            </p>
+
+            <img id="hitlogo" src="images/hit_logo.png" width="120" height="100" />  <!-לוגו של המכון הטכנולוגי חולון--><br />
+            <a href="http://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+            <br />
+            <br />
+            <p id="credits">
+                <strong>מקורות המדיה:</strong><br/>
+                איור השולחן:<a href="https://www.freepik.com/photos/background" target="_blank">Background photo created by rawpixel.com - www.freepik.com </a><br />
+                איור הסוכריות:<a href="https://www.freepik.com/vectors/food" target="_blank">Food vector created by macrovector - www.freepik.com </a><br />
+                איור הספר:<a href="https://www.freepik.com/vectors/background" target="_blank">Background vector created by brgfx - www.freepik.com </a>
+            </p>
+            
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <div class="candytitle">
+                <a class="closeHowToPlay">X</a>
+                <p>איך משחקים?</p>
+            </div>  
+            <div id="candyList">
+                <p>תמי השאירה לך שובל ממתקים כדי שתוכל לחזור הביתה, אסוף את כל הממתקים הנכונים, לפני שהמכשפה תגיע!</p>
+                <ul>
+                    <li>
+                        עליך לאסוף ממתקים המכילים מילים ו/או תמונות התואמות לקריטריון המוצג בשאלה, תוך התחמקות מאלו שאינם תואמים
+                    </li>
+                    <li>
+                        לתזוזה בין הממתקים יש להשתמש במקשי החיצים במקלדת:  ↑  מעלה,  ↓  מטה
+                    </li>
+                    <li>
+                        בכל פעם שתאסוף ממתק נכון, תחול התקדמות אל תמי והבית, במד ההתקדמות בתחתית המסך
+                    </li>
+                    <li>
+                        במידה ואספת ממתק לא נכון או שמא פספסת ממתק נכון, לא תחול התקדמות במד ההתקדמות בתחתית המסך
+                    </li>
+                    <li>
+                        להגדלת התמונות המופיעות על גבי הממתקים, יש ללחוץ על סמל "זכוכית מגדלת" המופיע לצד התמונה
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="../CandyRun/CandyRun.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
